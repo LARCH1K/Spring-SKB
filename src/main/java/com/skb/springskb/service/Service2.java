@@ -10,7 +10,7 @@ import org.springframework.stereotype.Service;
 public class Service2 implements MyService{
     @Override
     public void execute() {
-        System.out.println("Service2.execute");
+        log.info("Service2.execute");
     }
 
     @PostConstruct

@@ -2,7 +2,6 @@ package com.skb.springskb.service;
 
 import jakarta.annotation.PostConstruct;
 import jakarta.annotation.PreDestroy;
-import lombok.extern.log4j.Log4j;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Service;
 
@@ -11,7 +10,7 @@ import org.springframework.stereotype.Service;
 public class Service1 implements MyService{
     @Override
     public void execute() {
-        System.out.println("Service1.execute");
+        log.info("Service1.execute");
     }
 
     @PostConstruct
